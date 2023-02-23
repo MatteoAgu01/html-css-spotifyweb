@@ -6,7 +6,7 @@
      <link rel="stylesheet" href="./css/style.css">
      <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="viewport" content="width=device-width,initial-scale=1.0">
      <link rel="stylesheet" href="https://kit.fontawesome.com/21cb13ae64.css" crossorigin="anonymous">
      <title>spotify webt</title>
 </head>
@@ -16,7 +16,8 @@
           <main class="d-flex">
                <nav class="main-nav">
                     <div class="top-nav">
-                         <div>
+                         <div class="">
+                              <img id="hidden-logo" class="little-logo" src="./img/logo-small.svg" alt="">
                               <img class="little-logo" src="./img/logo.svg" alt="logo">
                          </div>
 
@@ -40,8 +41,11 @@
                          </div>
                          <div>
                               <h2 class="main-txt">Playlist</h2>
-                              <ul class="column-flex playlist-ul">
-                                   <li><i class="fa-solid fa-square-plus "></i> <span>Aggiungi playlist</span></li>
+                              <ul class="playlist-ul d-flex">
+                                   <li>
+                                        <i class="fa-solid fa-square-plus "></i>
+                                        <span>Aggiungi playlist</span>
+                                   </li>
                               </ul>
                          </div>
 
@@ -116,6 +120,17 @@
                                    </li>
                               </ul>
                          </nav>
+
+                         <div class="none">
+                              <ul class=" d-flex justify-center">
+                                   <li>
+                                        <a href="">Scopri</a>
+                                        <div class="hover-green">
+
+                                        </div>
+                                   </li>
+                              </ul>
+                         </div>
 
                          <div class="play-list-select">
                               <h2>Recently played</h2>
@@ -264,9 +279,9 @@
                     </div>
                     <div>
                          <h5>Sinister</h5>
-                         <p class="grey-txt">Brano Noname</p>
+                         <p class="grey-txt">Brano <br> Noname</p>
                     </div>
-                    <div>
+                    <div class="wrap">
                          <i class="fa-regular fa-heart fa-size"></i>
                          <i class="fa-regular fa-folder fa-size"></i>
                     </div>
@@ -284,7 +299,7 @@
                     <div class="cta-bot  d-flex justify-center align-center">
                          <span>0:25</span>
                          <div class="time-bar align-center">
-                              <div id="music"class="time">
+                              <div id="music" class="time">
 
                               </div>
                          </div>
